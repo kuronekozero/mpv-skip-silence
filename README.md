@@ -1,3 +1,24 @@
+# Better version of my script
+After searching for a while I've discovered the following [script](https://github.com/Ajatt-Tools/sub-transition). It works just like mine but it is much better, doesn't have this bug related to ASCII characters and it also can skip sounds by analyzing brackets. I recommend you using this script first instead of mine.
+Also, set "reset_before" variable in this script to 2 seconds time. Otherwise this script will also speed up small parts of the speech, don't know why it works that way, i personally use following settings:
+```
+local config = {
+    start_enabled = true, -- enable transitions when mpv starts without having to enable them in the menu
+    notifications = false, -- enable notifications when speed changes
+    pause_on_start = false, -- pause when a subtitle starts
+    pause_before_end = false, -- pause before a subtitle ends
+    hide_subs_when_playing = false, -- hide subtitles when playback is active
+    start_delay = 0.5, -- if the next subtitle appears after this threshold then speedup
+    reset_before = 2, --seconds to stop short of the next subtitle
+    min_duration = 2.5, -- minimum duration of a skip
+    normal_speed = 1, -- reset back to this speed
+    inter_speed = 5, -- the value that "speed" is set to during speedup
+    menu_font_size = 24, -- font size
+    skip_non_dialogue = true, -- skip lines that are enclosed in parentheses
+    skip_immediately = false, -- skip non-dialogue lines without transitioning
+}
+```
+
 # Skip-Silence
 
 **Automatically skip silent parts in videos using subtitle timing data**
