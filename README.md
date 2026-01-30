@@ -1,4 +1,4 @@
-# Better version of my script
+# Better version of this script
 After searching for a while I've discovered the following [script](https://github.com/Ajatt-Tools/sub-transition). It works just like mine but it is much better, doesn't have this bug related to ASCII characters and it also can skip sounds by analyzing brackets. I recommend you using this script first instead of mine.
 Also, set "reset_before" variable in this script to 2 seconds time. Otherwise this script will also speed up small parts of the speech, don't know why it works that way, i personally use following settings:
 ```
