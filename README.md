@@ -19,6 +19,8 @@ local config = {
 }
 ```
 
+If it doesn't work to you for some reason you can try using my version.
+
 # Skip-Silence
 
 **Automatically skip silent parts in videos using subtitle timing data**
