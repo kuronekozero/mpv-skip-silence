@@ -145,5 +145,7 @@ Contributions, bug reports, and feature requests are welcome!
 
 **Priority improvements:**
 - Fix non-ASCII file path reading
+- Add option to skip silence completely
+- Add option to skip sounds 
 
 ---
